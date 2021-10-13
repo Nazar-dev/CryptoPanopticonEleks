@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <UseWindowsForms>true</UseWindowsForms>
+        <ApplicationIcon>cryptocurrency.png</ApplicationIcon>
+        <TargetFramework>net5.0-windows</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="FontAwesome" Version="4.7.0" />
+      <PackageReference Include="Ninject" Version="3.3.4" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\CryptoPanopticon.BL\CryptoPanopticon.BL.csproj" />
+    </ItemGroup>
+
+</Project>
