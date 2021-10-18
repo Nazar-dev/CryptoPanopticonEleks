@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using CryptoPanopticon.DA.Interfaces;
 using CryptoPanopticon.DA.Interfaces.Models;
 
@@ -8,12 +9,15 @@ namespace CryptoPanopticon.DA.Implementations.Models {
 		public UserModel(IDataBase dataBase) {
 			_dataBase = dataBase;
 		}
-		public void AddUser(IUser user) {
-			throw new System.NotImplementedException();
+
+		public bool AddUser(IUser user) {
+			return _dataBase.AddUser(user);
 		}
 		public IUser GetUser(int userId) {
-			throw new System.NotImplementedException();
+			return _dataBase.GetUserBy(userId);
 		}
-		//TODO Realize method's
+		public List<IUser> GetAll() {
+			return _dataBase.GetAllUsers();
+		}
 	}
 }

@@ -28,6 +28,7 @@ namespace CryptoPanopticon.Forms
             switch (isSuccess)
             {
                 case true:
+                    MessageBox.Show("SUCCESS");
                     ProccedToTheMainMenu();
                     break;
                 case false:

@@ -1,4 +1,4 @@
-namespace CryptoPanopticon.DA.Interfaces {
+namespace CryptoPanopticon.DA.Interfaces.Models {
 	public interface IUser {
 		// User fields
 		public int Id { get; set; }

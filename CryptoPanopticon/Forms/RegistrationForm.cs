@@ -39,12 +39,13 @@ namespace CryptoPanopticon.Forms
                 ShowMessageIsUserExist();
                 return;
             }
-            bool isRegistrationSucces = _registration.Registration(userNameField.Text, userLoginField.Text, passwordField.Text, out _);
+            bool isRegistrationSucces = _registration.Register(userNameField.Text, userLoginField.Text, passwordField.Text, out _);
             if (!isRegistrationSucces)
             {
                 ShowMessageNotRecognitionExeption();
                 return;
             }
+            MessageBox.Show("SUCCESS");
             //TODO swap this form to Auth form 
             //TODO create data correction checker (Patern)
         }

@@ -1,8 +1,12 @@
+using System.Collections.Generic;
+using CryptoPanopticon.DA.Interfaces.Models;
+
 namespace CryptoPanopticon.DA.Interfaces
 {
     public interface IDataBase
     {
-        //Method of database controll
-        //TODO impement this interface
+        bool AddUser(IUser user);
+        IUser GetUserBy(int userId);
+        List<IUser> GetAllUsers();
     }
 }
